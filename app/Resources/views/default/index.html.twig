@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Page d'accueil de mon blog
+{% endblock %}
+
+{% block metas %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+    <div id="container pt-5">
+        <h1>Bienvenue sur mon blog</h1>
+        <p>Aller voir les articles</p>
+        <a href={{ path('list') }}>Voir l'article </a>
+    </div>
+
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}
